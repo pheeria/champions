@@ -23,5 +23,5 @@ FROM openjdk:8-jre-alpine
 WORKDIR /usr/app
 
 # Rename `release.jar` to your uberjar name
-COPY --from=build-jar /usr/src/target/release.jar .
-CMD ["java", "-jar", "release.jar"]
+COPY --from=build-jar /usr/src/target/uberjar/champions-0.1.0-SNAPSHOT.jar .
+CMD ["java", "-jar", "champions-0.1.0-SNAPSHOT.jar"]
