@@ -6,7 +6,7 @@
   :dependencies [
                  [org.clojure/clojure "1.10.3"]
                  [org.clojure/data.json "2.4.0"]
-                 [http-kit "2.6.0-alpha1"]]
+                 [http-kit "2.6.0"]]
   :main ^:skip-aot champions.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
